@@ -40,7 +40,7 @@ def comfiltro(data=dados):
     with tab1:
         fig1 = plt.figure(figsize=(14,7))
         sns.pointplot(x=data['age'], y=data['charges'], hue=data['sex'], ci=None, palette='Set2')
-        plt.xticks(fontsize=14)
+        plt.xticks(fontsize=12)
         plt.yticks(fontsize=14)
         plt.xlabel('AGE', fontsize=16)
         plt.ylabel('CHARGES', fontsize=16)
@@ -50,7 +50,7 @@ def comfiltro(data=dados):
     with tab2:
         fig2 = plt.figure(figsize=(14,7))
         sns.pointplot(x=data['age'], y=data['bmi'], hue=data['sex'], ci=None, palette='Set2')
-        plt.xticks(fontsize=14)
+        plt.xticks(fontsize=12)
         plt.yticks(fontsize=14)
         plt.xlabel('AGE', fontsize=16)
         plt.ylabel('BMI', fontsize=16)
